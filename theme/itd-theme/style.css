@@ -1,80 +1,36 @@
-/* GENERAL  
-.wrapper {
-	width:950px;
-	margin:0 auto;
-	position:relative;
-	display:block;
-}
-*/
+/* GENERAL  */
+
 
 * {margin: 0; padding: 0;}
 html, body {height: 100%;}
 a {text-decoration: none;}
 
 
-a:link, a:visited {color:#316594;}
-a:hover, a:focus {color:#222;}	
-
-
-/* HEADER 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6B94B4', endColorstr='#316594',GradientType=0 );
- 	background: #6B94B4;
-	background: -moz-linear-gradient(top, #6B94B4 0%, #316594 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6B94B4), color-stop(100%,#316594));  */
 
 #top {position:relative; left:198px; margin-right:198px; height: 106px; background: #fff; border-bottom: 5px solid #333;}
 
-#header {position:relative; left:27px; max-width: 360px; float:left; height:106px;} /* top:22px; если undertitle закоментен */
+#header {position:relative; left:27px; max-width: 360px; float:left; height:106px;} 
+/* top:22px; если undertitle закоментен */
 	#undertitle {position:relative; top:18px; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color:#999; margin: 0 0 14px 0;}
 	#title  a {font-family: 'Exo', sans-serif; font-weight: 800; font-size:42px; color: #000; } 
 	#subtitle {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color: #999; margin: -8px 0 0 0;}
 
-/* breadcrumbs */
-header .breadcrumbs {
-	text-shadow: 1px 1px 0px rgba(255,255,255,.5);
-	border-top:#FFF 1px solid;
-	border-bottom:#ccc 1px solid;
-	font-size:11px;
-	height:25px;
-	line-height:25px;
-	overflow:hidden;
-	color:#666;
-	text-transform:uppercase;
-	width:100%;
-	background: #eee;
-	background: -moz-linear-gradient(top, #EDEDED 0%, #D5D5D5 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#D5D5D5));
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EDEDED', endColorstr='#D5D5D5',GradientType=0 ); 
-}
-header .breadcrumbs a:link, 
-header .breadcrumbs a:visited {
-	color:#666;
-	text-decoration:underline;
-}
-header .breadcrumbs a:focus, 
-header .breadcrumbs a:hover {
-	color:#316594;
-	text-decoration:underline;
-}
-#index header .breadcrumbs {
-	display:none; /* no reason to have breadcrumbs on homepage */
-} 
-
-
 /* menubar */
-#menubar {position:absolute; width:198px; min-height:100%; background:#333;}
+#menubar {position:absolute; top:0; width:198px; min-height:100%; background:#333;}
 
-/* navigation  text-shadow: 1px 1px 0px rgba(0,0,0, .3); */
-
+/* navigation */
 nav {margin: 22px 0 0 22px}
 ol, li {list-style-type: none;}
 ol {padding: 7px 0 13px 0;}
 li {padding: 4px 0 3px 0;}
 
-
 /* BODY CONTENT */
 article {
-	float:left;
-	width:688px;
+	min-width:350px;
+	margin: 0 0 0 198px;
+	position:relative;
+	display:block;
+	max-width:788px;
 	min-height:500px;
 	background:#fff;
 	border-bottom:1px solid #c8c8c8;
@@ -85,44 +41,43 @@ article {
 	box-shadow: 2px 1px 10px rgba(0,0,0, .07);
 }
 article h1 {
-	font-family: 'Yanone Kaffeesatz', arial, helvetica, sans-serif;
-	margin:0 0 45px 0;
+	font-family: 'Roboto', sans-serif; font-weight: 700; font-size:30px;
+	margin:0 0 25px 0;
 	color: #275176;
-	font-size:37px;
 }
 article h2 {
-	font-family: 'Yanone Kaffeesatz', arial, helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin:0 0 10px 0;
 	color: #222222;
 	font-size:30px;
 }
 article h3 {
-	font-family: 'Yanone Kaffeesatz', arial, helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin:0 0 15px 0;
 	color: #275176;
 	font-size:25px;
 }
 article h4 {
-	font-family: 'Yanone Kaffeesatz', arial, helvetica, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin:0 0 10px 0;
 	color: #555;
 	font-size:20px;
 	font-weight:100;
 }
 article h5 {
-	font-family: arial, serif;
+	font-family: 'Roboto', sans-serif;
 	margin:0 0 10px 0;
 	color: #333;
 	font-size:15px;
 }
 article h6 {
-	font-family: arial, serif;
+	font-family: 'Roboto', sans-serif;
 	margin:0 0 10px 0;
 	color: #666;
 	font-size:14px;
 }
 article section {
-	padding:40px;
+	padding:27px;
 	line-height:22px;
 	font-size:14px;
 	color:#333;	

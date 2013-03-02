@@ -6,36 +6,27 @@
 * @Action:		ITD lab. theme for GetSimple CMS
 *
 *****************************************************/
-
 # Include the header template
-include('header.itd.php'); 
-?>
-		<!-- include the sidebar template -->
-		<?php include('menubar.itd.php'); ?>
+include('header.itd.php'); ?>
+
+<!-- include the menubar template -->
+<?php include('menubar.itd.php'); ?>
 
        <!-- socialmedia -->
 	   <div class="section" id="socialmedia" >
 	    	<h2>Connect</h2>
 	   </div>
 
+
 <article>
 	<section>
 		<!-- title and content -->
 		<h1><?php get_page_title(); ?></h1>
 	    <?php get_page_content(); ?>
-				
-				
-		
-		<!-- page footer -->
-				<div class="footer">
-					<p>Published on <time datetime="<?php get_page_date('Y-m-d'); ?>" pubdate><?php get_page_date('F jS, Y'); ?></time></p>
-				</div>
-			</section>
 			
-		</article>
-
-
-	</div>
+	<p>Published on <time datetime="<?php get_page_date('Y-m-d'); ?>" pubdate><?php get_page_date('F jS, Y'); ?></time></p>
+	</section>	
+</article>				
 
 <!-- include the footer template -->
 <?php include('footer.itd.php'); ?>
