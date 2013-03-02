@@ -8,20 +8,13 @@
 *****************************************************/
 ?>
 
-	<!-- site footer -->
-	<footer class="clearfix" >
-		
-		<?php get_footer(); ?>
-		
-		<!-- 
-			Theme Credits
-			Please consider keeping the links to the developer and GetSimple if you use this theme
-		-->
-
-			<div class="left"><?php echo date('Y'); ?> <a href="<?php get_site_url(); ?>" ><?php get_site_name(); ?></a></div>
-			<div class="right">Разработка сайта <a href="http://www.inteldata.ru" >ITD lab.</a> &middot; <?php get_site_credits(); ?></div>
-
-	</footer>
+<footer>
+	<div id="footer">
+	<?php get_footer(); ?>
+		<div class="left"><?php echo date('Y'); ?> <a href="<?php get_site_url(); ?>" ><?php get_site_name(); ?></a></div>
+		<div class="right">Разработка сайта <a href="http://www.inteldata.ru" >ITD lab.</a> &middot; <?php get_site_credits(); ?></div>
+	</div>
+</footer>
 	 
 </body>
 </html>

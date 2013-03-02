@@ -79,3 +79,7 @@
 [02-Mar-2013 12:53:08 UTC] PHP Fatal error:  Call to undefined function Innovation_Parent_Link() in W:\home\localhost\www\itd\theme\itd-theme\template.php on line 19
 [02-Mar-2013 12:58:13 UTC] PHP Parse error:  syntax error, unexpected '>' in W:\home\localhost\www\itd\theme\itd-theme\template.php on line 9
 [02-Mar-2013 12:58:31 UTC] PHP Parse error:  syntax error, unexpected '<' in W:\home\localhost\www\itd\theme\itd-theme\template.php on line 11
+[02-Mar-2013 15:04:37 UTC] PHP Fatal error:  Call to undefined function Innovation_Parent_Link() in W:\home\localhost\www\itd\theme\itd-theme\template.php on line 27
+[02-Mar-2013 15:04:37 UTC] PHP Fatal error:  Call to undefined function Innovation_Parent_Link() in W:\home\localhost\www\itd\theme\itd-theme\template.php on line 27
+[02-Mar-2013 15:05:26 UTC] PHP Fatal error:  Call to undefined function php() in W:\home\localhost\www\itd\theme\itd-theme\template.php on line 27
+[02-Mar-2013 15:05:26 UTC] PHP Fatal error:  Call to undefined function php() in W:\home\localhost\www\itd\theme\itd-theme\template.php on line 27

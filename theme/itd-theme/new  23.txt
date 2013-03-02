@@ -1,0 +1,169 @@
+
+/* BODY CONTENT */
+article {
+	min-width:280px;
+	margin: 0 0 0 198px;
+	position:relative;
+	display:block;
+	max-width:788px;
+	min-height:500px;
+	background:#fff;
+	border-bottom:1px solid #c8c8c8;
+	border-left:1px solid #e4e4e4;
+	border-right:1px solid #c8c8c8;
+	-moz-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	-webkit-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+}
+article h1 {
+	font-family: 'Roboto', sans-serif; font-weight: 700;
+	margin:0 0 25px 0;
+	color: #275176;
+	font-size:30px;
+}
+article h2 {
+	font-family: 'Roboto', sans-serif;
+	margin:0 0 10px 0;
+	color: #222222;
+	font-size:28px;
+}
+article h3 {
+	font-family: 'Roboto', sans-serif;
+	margin:0 0 15px 0;
+	color: #275176;
+	font-size:25px;
+}
+article h4 {
+	font-family: 'Roboto', sans-serif;
+	margin:0 0 10px 0;
+	color: #555;
+	font-size:20px;
+	font-weight:100;
+}
+article h5 {
+	font-family: 'Roboto', sans-serif;
+	margin:0 0 10px 0;
+	color: #333;
+	font-size:15px;
+}
+article h6 {
+	font-family: 'Roboto', sans-serif;
+	margin:0 0 10px 0;
+	color: #666;
+	font-size:14px;
+}
+article section {
+	padding:27px;
+	line-height:22px;
+	font-size:14px;
+	color:#333;	
+}
+article section p {margin:0 0 25px 0;}
+article section ul, 
+article section ol {
+	margin:0 0 25px 30px;
+}
+article section ul ul, 
+article section ol ol,
+article section ul ol, 
+article section ol ul {
+	margin:0 0 0 25px;
+}
+article section code {
+	border:1px solid #ccc;
+	background:#f6f6f6;
+	font-size:12px;
+	padding:1px;
+}
+article section pre {
+	border:1px solid #ccc;
+	background:#f6f6f6;
+	padding:15px;
+	margin:0 0 25px 0;
+	line-height:16px;
+	font-size:13px;
+	color:#555;
+	text-shadow: 1px 1px 0px #fff;
+	border-radius:0 4px 4px 0;
+	-moz-border-radius:0 4px 4px 0;
+	-khtml-border-radius:0 4px 4px 0;
+	-webkit-border-radius:0 4px 4px 0;
+}
+article section pre code {
+	border:none;
+	background:none;
+	padding:none;
+}
+article section blockquote {
+	margin:0 0 25px 20px;
+	color:#555;
+	line-height:20px;
+	font-family:georgia, garamond, serif;
+	font-style:italic;
+	padding:0 0 0 15px;
+	border-left:1px solid #ccc;
+}
+article section time {
+	color:#888;
+	margin-top:10px;
+	border-top:1px dotted #ccc;
+	padding-top:10px;
+}
+article section time p {
+	margin:0 0 10px 0;
+}
+
+
+/* : socialmedia */
+#socialmedia {position:relative; margin-left:198px;}
+
+/* footer */
+footer {
+	padding:20px 0;
+	text-shadow: 1px 1px 0px rgba(255,255,255,.8);
+	color:#888;
+	font-size:11px;
+}
+footer .left {
+	float:left;
+	width:40%;
+	text-align:left;
+	padding-left:55px;
+}
+footer .right {
+	float:right;
+	width:60%;
+	text-align:right;
+	padding-right:55px;
+}
+footer a:link, footer a:visited {
+	color:#888;
+}
+footer a:hover, footer a:focus {
+	color:#555;
+}
+
+/* Отдельные блоки в рамочке */
+aside {
+	width:280px;
+	position:relative;
+	display:block;
+	background:#fff;
+	border-bottom:1px solid #c8c8c8;
+	border-left:1px solid #e4e4e4;
+	border-right:1px solid #c8c8c8;
+	-moz-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	-webkit-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+}
+
+
+	<!-- Подменю сайта с сверху -->
+	<div id="submenu" align="right">
+		<a href="news.html" title="Новые публикации" alt="Новые публикации">Новые публикации</a>&nbsp;|&nbsp;<a href="med.html" title="Медицина" alt="Медицина">Медицина</a>&nbsp;|&nbsp;<a href="it.html" title="IT-технологии" alt="IT-технологии">IT-технологии</a>&nbsp;|&nbsp;<a href="civ.html" title="Цивилизация. XXI век" alt="Цивилизация. XXI век">Цивилизация. XXI век</a>&nbsp;|&nbsp;<a href="gallery.html" title="Фото и видео галереи" alt="Фото и видео галереи">Фото и видео</a>&nbsp;|&nbsp;<a href="autors.html" title="Об авторах" alt="Об авторах">Об авторах</a>
+	</div>
+
+	<!-- Визуальная вспомогательная навигация -->
+	<div id="breadcrumbs" >
+		<a href="<?php get_site_url(); ?>">Главная</a> &nbsp;&nbsp;&#149;&nbsp;&nbsp; <b><?php get_page_clean_title(); ?></b>
+	</div> 

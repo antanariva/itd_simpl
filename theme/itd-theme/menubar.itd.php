@@ -8,20 +8,11 @@
 *****************************************************/
 ?>
 
-<aside> 
-    <div id="menubar">
+<!-- main navigation -->
 
-	<!-- main navigation -->
-				<nav id="main-nav">
-					<ul>
-						<?php get_nested_navigation(); ?>
-					</ul>
-				</nav>
-	
-	<!-- wrap each sidebar section like this -->
-	<div class="section">
-		<?php get_component('sidebar');	?>
-		<?php get_component('tagline'); ?>
-	</div>
-    </div>
-</aside>
+<nav id="main-nav">
+<ul>
+	<?php get_nested_navigation(); ?>
+</ul>
+</nav>
+</nav>
