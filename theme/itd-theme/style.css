@@ -1,22 +1,19 @@
 /* GENERAL  */
-
-
 * {margin: 0; padding: 0;}
 html, body {height: 100%;}
 a {text-decoration: none;}
 
 
+/* menubar */
+#menubar {width:198px; background:#333; min-height:100%; height: 100%;  height:auto !important; margin-bottom:-80px;}
 
-#top {position:relative; left:198px; margin-right:198px; height: 106px; background: #fff; border-bottom: 5px solid #333;}
+#top {position:relative; left:198px; top:0; margin-right:198px; height:106px; background: #fff; border-bottom: 5px solid #333;}
 
-#header {position:relative; left:27px; max-width: 360px; float:left; height:106px;} 
+#header {position:relative; left:27px; max-width: 360px; min-width:280px; float:left; height:106px;} 
 /* top:22px; если undertitle закоментен */
 	#undertitle {position:relative; top:18px; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color:#999; margin: 0 0 14px 0;}
 	#title  a {font-family: 'Exo', sans-serif; font-weight: 800; font-size:42px; color: #000; } 
 	#subtitle {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color: #999; margin: -8px 0 0 0;}
-
-/* menubar */
-#menubar {position:absolute; top:0; width:198px; min-height:100%; background:#333;}
 
 /* navigation */
 nav {margin: 22px 0 0 22px}
@@ -24,9 +21,29 @@ ol, li {list-style-type: none;}
 ol {padding: 7px 0 13px 0;}
 li {padding: 4px 0 3px 0;}
 
+.cat-bar {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:18px;}
+ a.cat-bar{color:#f63;} 
+ a.cat-bar:hover {color:#f63;} 
+ a.cat-bar:visited {color:#f63;}
+#subcat {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:15px;}
+ #subcat a{color: #fff; } 
+ #subcat a:hover {color: #ccc;} 
+ #subcat a:visited {color: #fff;}
+
+.cat {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:16px;}
+ a.cat {color: #c9201d;} 
+ a.cat:hover {color: #c9201d;} 
+ a.cat:visited {color: #c9201d;}
+
+h2 {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:20px; margin: 0 0 4px 0;}
+ a.h2{color:#000;}
+ 
+.desc {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:0; color: #333;}
+.prim {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:5px 0 3px 0; color: #39f;}
+
 /* BODY CONTENT */
 article {
-	min-width:350px;
+	min-width:280px;
 	margin: 0 0 0 198px;
 	position:relative;
 	display:block;
@@ -41,15 +58,16 @@ article {
 	box-shadow: 2px 1px 10px rgba(0,0,0, .07);
 }
 article h1 {
-	font-family: 'Roboto', sans-serif; font-weight: 700; font-size:30px;
+	font-family: 'Roboto', sans-serif; font-weight: 700;
 	margin:0 0 25px 0;
 	color: #275176;
+	font-size:30px;
 }
 article h2 {
 	font-family: 'Roboto', sans-serif;
 	margin:0 0 10px 0;
 	color: #222222;
-	font-size:30px;
+	font-size:28px;
 }
 article h3 {
 	font-family: 'Roboto', sans-serif;
@@ -127,37 +145,21 @@ article section blockquote {
 	padding:0 0 0 15px;
 	border-left:1px solid #ccc;
 }
-article section .footer {
+article section time {
 	color:#888;
-	font-size:11px;
-	margin-top:40px;
+	margin-top:10px;
 	border-top:1px dotted #ccc;
-	padding-top:15px;
+	padding-top:10px;
 }
-article section .footer p {
+article section time p {
 	margin:0 0 10px 0;
 }
 
 
 /* : socialmedia */
-aside #socialmedia {
-	position:relative;
-}
-aside #socialmedia h2 {
-	width:65px;
-	background: #316594;
-	background: -moz-linear-gradient(top, #316594 0%, #2C5983 100%); 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#316594), color-stop(100%,#2C5983));
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#316594', endColorstr='#2C5983',GradientType=0 ); 
-}
-aside #socialmedia .icons {
-	position:absolute;
-	top:3px;
-	right:0px;	
-}
+#socialmedia {position:relative; margin-left:198px;}
 
-
-/* FOOTER */
+/* footer */
 footer {
 	padding:20px 0;
 	text-shadow: 1px 1px 0px rgba(255,255,255,.8);
@@ -168,17 +170,17 @@ footer .left {
 	float:left;
 	width:40%;
 	text-align:left;
+	padding-left:55px;
 }
 footer .right {
 	float:right;
 	width:60%;
 	text-align:right;
+	padding-right:55px;
 }
 footer a:link, footer a:visited {
 	color:#888;
-	text-decoration:underline;
 }
 footer a:hover, footer a:focus {
 	color:#555;
-	text-decoration:underline;
 }

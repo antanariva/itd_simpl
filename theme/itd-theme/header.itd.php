@@ -47,4 +47,22 @@
 		<div id="subtitle">Интеллектуальное общение. Анализ. Критика</div>
 		</div>
     </div>
+	<div id="search"><!-- Поиск по сайту -->
+		<div>Поиск по сайту</div>
+	</div>
+	
+	<div id="popular"><!-- Рекламируемые заголовки вверху -->
+	<div id="popular1">
+		<img src="img/itd.png" alt="Иллюстрация" align="left" id="imgpop">
+		<div><a href="itd.html" title="Услуги ITD lab." alt="ITD lab." class="cat">IT-сервис</a></div>
+		<h2><a href="itd/sitebuilding.html" title="Заказать разработку сайта" alt="Создание сайтов" class="h2">Создание сайтов</a></h2>
+		<div class="desc">Услуги создания и поддержки сайтов, разработка презентаций...</div>
+	</div>
+	
+	<div id="popular2">
+		<div><a href="med.html" title="Статьи медицинской тематики" alt="Вопросы медицины" class="cat">Вопросы медицины</a></div>
+		<h2><a href="med/vakc.html" title="Вакцинация: взгяд врачей и пациентов" alt="Вакцинация: за и против" class="h2">Вакцинация: за и против</a></h2>
+		<div class="desc">Польза и вред прививок, взгляд иммунолога, юридические аспекты</div>
+	</div>
+	</div>
 </header>	

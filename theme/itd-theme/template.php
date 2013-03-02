@@ -6,16 +6,16 @@
 * @Action:		ITD lab. theme for GetSimple CMS
 *
 *****************************************************/
-# Include the header template
-include('header.itd.php'); ?>
+# Сначала грузим боковую панель с меню. Только потом хэдер!
+include('menubar.itd.php'); ?>
 
-<!-- include the menubar template -->
-<?php include('menubar.itd.php'); ?>
+<!-- include the header template -->
+<?php include('header.itd.php'); ?>
 
-       <!-- socialmedia -->
-	   <div class="section" id="socialmedia" >
-	    	<h2>Connect</h2>
-	   </div>
+<!-- socialmedia -->
+<div class="section" id="socialmedia" >
+	<h2>Connect</h2>
+</div>
 
 
 <article>

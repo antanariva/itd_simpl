@@ -21,6 +21,7 @@
 	<!-- wrap each sidebar section like this -->
 	<div class="section">
 		<?php get_component('sidebar');	?>
+		<?php get_component('tagline'); ?>
 	</div>
     </div>
 </aside>
