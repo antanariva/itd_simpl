@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<item><blogurl><![CDATA[index]]></blogurl><lang><![CDATA[en_US]]></lang><excerptlength><![CDATA[350]]></excerptlength><postformat><![CDATA[N]]></postformat><postperpage><![CDATA[8]]></postperpage><recentposts><![CDATA[4]]></recentposts><prettyurls><![CDATA[N]]></prettyurls><autoimporter><![CDATA[N]]></autoimporter><autoimporterpass><![CDATA[passphrase]]></autoimporterpass><displaytags><![CDATA[Y]]></displaytags><rsstitle><![CDATA[]]></rsstitle><rssdescription><![CDATA[]]></rssdescription><postthumbnail><![CDATA[N]]></postthumbnail><displaydate><![CDATA[Y]]></displaydate><previouspage><![CDATA[Newer Posts]]></previouspage><nextpage><![CDATA[Older Posts]]></nextpage><displaycss><![CDATA[Y]]></displaycss><csscode><![CDATA[.blog_post_thumbnail {&#xD;
-	width:200px;&#xD;
-	height:auto;&#xD;
-	float:left;&#xD;
-	padding-right:10px;&#xD;
-	padding-bottom:10px;&#xD;
-}&#xD;
-&#xD;
-.blog_post_container {&#xD;
-	clear:both;&#xD;
-}					]]></csscode><rssfeedposts><![CDATA[10]]></rssfeedposts><comments><![CDATA[]]></comments><sharethis><![CDATA[]]></sharethis><addthis><![CDATA[]]></addthis><addata><![CDATA[]]></addata><allpostsadtop><![CDATA[]]></allpostsadtop><allpostsadbottom><![CDATA[]]></allpostsadbottom><postadtop><![CDATA[]]></postadtop><postadbottom><![CDATA[]]></postadbottom><customfields><![CDATA[]]></customfields><blogpage><![CDATA[]]></blogpage><displayreadmore><![CDATA[]]></displayreadmore><readmore><![CDATA[]]></readmore><archivepostcount><![CDATA[]]></archivepostcount><disqusshortname><![CDATA[]]></disqusshortname><disquscount><![CDATA[]]></disquscount><postdescription><![CDATA[]]></postdescription></item>
+<item><blogurl><![CDATA[temp]]></blogurl><lang><![CDATA[en_US]]></lang><excerptlength><![CDATA[670]]></excerptlength><postformat><![CDATA[N]]></postformat><postperpage><![CDATA[8]]></postperpage><recentposts><![CDATA[4]]></recentposts><prettyurls><![CDATA[]]></prettyurls><autoimporter><![CDATA[N]]></autoimporter><autoimporterpass><![CDATA[passphrase]]></autoimporterpass><displaytags><![CDATA[Y]]></displaytags><rsstitle><![CDATA[]]></rsstitle><rssdescription><![CDATA[]]></rssdescription><comments><![CDATA[N]]></comments><disqusshortname><![CDATA[]]></disqusshortname><disquscount><![CDATA[N]]></disquscount><sharethis><![CDATA[N]]></sharethis><sharethisid><![CDATA[]]></sharethisid><addthis><![CDATA[N]]></addthis><addthisid><![CDATA[]]></addthisid><addata><![CDATA[]]></addata><allpostsadtop><![CDATA[N]]></allpostsadtop><allpostsadbottom><![CDATA[N]]></allpostsadbottom><postadtop><![CDATA[N]]></postadtop><postadbottom><![CDATA[N]]></postadbottom><postthumbnail><![CDATA[N]]></postthumbnail><displaydate><![CDATA[Y]]></displaydate><previouspage><![CDATA[Newer Posts]]></previouspage><nextpage><![CDATA[Older Posts]]></nextpage><displaycss><![CDATA[Y]]></displaycss><csscode><![CDATA[.blog_post_thumbnail {
+	width:200px;
+	height:auto;
+	float:left;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+.blog_post_container {
+	clear:both;
+}					]]></csscode><rssfeedposts><![CDATA[10]]></rssfeedposts><customfields><![CDATA[N]]></customfields><blogpage><![CDATA[]]></blogpage><displayreadmore><![CDATA[N]]></displayreadmore><readmore><![CDATA[]]></readmore><archivepostcount><![CDATA[N]]></archivepostcount><postdescription><![CDATA[N]]></postdescription></item>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title></title>
+<link>http://localhost/itd/rss.rss</link>
+<description></description>
+<lastBuildDate>Mon, 4 Mar 2013 11:26:16 UTC</lastBuildDate>
+<language>en-US</language>
+<atom:link href="http://localhost/itd/rss.rss" rel="self" type="application/rss+xml" />
+<item>
+	  <title> Почему же дети не болели так раньше? </title>
+	  <link>http://localhost/itd/index.php?post=-1-2-3-4</link>
+	  <guid>http://localhost/itd/index.php?post=-1-2-3-4</guid>
+	  <description>&amp;lt;p&amp;gt;
+	Почему же дети не болели так раньше?&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+	До начала 20 века сведений очень мало. Садик</description>
+	  <category>Иммунология</category>
+</item>
+<item>
+	  <title>как лечить простуду </title>
+	  <link>http://localhost/itd/index.php?post=-1-2-3</link>
+	  <guid>http://localhost/itd/index.php?post=-1-2-3</guid>
+	  <description>&amp;lt;p&amp;gt;
+	Статья родилась как ответ на вопрос:&amp;lt;br /&amp;gt;
+	...мы пошли в садик, заболели, принимали для профила�</description>
+	  <category>Лечение</category>
+</item>
+<item>
+	  <title>Поднять иммунитет</title>
+	  <link>http://localhost/itd/index.php?post=-1-2</link>
+	  <guid>http://localhost/itd/index.php?post=-1-2</guid>
+	  <description>&amp;lt;p&amp;gt;
+	Повышение иммунитета, а особенно повышение иммунитета у детей - вопрос, который встает особенно ос�</description>
+	  <category>Иммунология</category>
+</item>
+<item>
+	  <title>Иммунитет. Составные части или одно целое</title>
+	  <link>http://localhost/itd/index.php?post=-1</link>
+	  <guid>http://localhost/itd/index.php?post=-1</guid>
+	  <description>&amp;lt;p&amp;gt;
+	Иммунитет (лат. immunitas &amp;amp;mdash; освобождение, избавление от чего-либо) &amp;amp;mdash; невосприимчивость, со</description>
+	  <category>Иммунология</category>
+</item>
+</channel>
+</rss>

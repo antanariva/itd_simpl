@@ -11,17 +11,12 @@
 
 <aside id="sidebar">  
 	<div id="news"><!-- Правый блок с новыми статьями -->
+	     <?php get_component('sidebar');	?>
     </div>
 </aside>
-
-<aside id="sidebar"> 
-    <div id="zametko"><!-- Правый блок с избранными статьями "Хозяйке на..." -->
+	
+<aside id="sidebar">  
+	<div id="news"><!-- Правый блок ещё с чем-нибудь -->
+	    <?php get_component('tagline');	?>
     </div>
-</aside>	
-	
-<!-- wrap each sidebar section like this -->
-<div class="section">
-	<?php get_component('sidebar');	?>
-</div>
-
-	
+</aside>

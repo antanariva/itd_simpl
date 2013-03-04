@@ -19,7 +19,7 @@
     <meta name="generator" content="arms" />
     <link rel="author" href="humans.txt" />
     <meta name="robots" content="index, follow">
-
+	<script type="text/javascript" src="<?php get_theme_url(); ?>/js/jquery-1.9.1.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400&subset=cyrillic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
@@ -51,19 +51,20 @@
 
 		<div id="search">
 		<!-- Поиск по сайту -->
+		<?php get_i18n_search_form(array('slug'=>'search', 'showTags'=>0)); ?>
 		</div>
 		
 		<div id="popular"><!-- Рекламируемые заголовки вверху -->
 			<div id="popular1">
 				<img src="<?php get_theme_url(); ?>/img/itd.png" alt="ITD lab." align="left" id="imgpop">
 				<div><a href="itd.html" title="Услуги ITD lab." alt="ITD lab." class="cat">IT-сервис</a></div>
-				<h2><a href="itd/sitebuilding.html" title="Заказать разработку сайта" alt="Создание сайтов" class="h2">Создание сайтов</a></h2>
+				<h5><a href="itd/sitebuilding.html" title="Заказать разработку сайта" alt="Создание сайтов" class="h5">Создание сайтов</a></h5>
 				<div class="desc">Услуги создания и поддержки сайтов, разработка презентаций...</div>
 			</div>
 		
 			<div id="popular2">
 				<div><a href="med.html" title="Статьи медицинской тематики" alt="Вопросы медицины" class="cat">Вопросы медицины</a></div>
-				<h2><a href="med/vakc.html" title="Вакцинация: взгяд врачей и пациентов" alt="Вакцинация: за и против" class="h2">Вакцинация: за и против</a></h2>
+				<h5><a href="med/vakc.html" title="Вакцинация: взгяд врачей и пациентов" alt="Вакцинация: за и против" class="h5">Вакцинация: за и против</a></h5>
 				<div class="desc">Польза и вред прививок, взгляд иммунолога, юридические аспекты</div>
 			</div>
 		</div>
