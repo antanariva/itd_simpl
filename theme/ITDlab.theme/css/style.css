@@ -1,0 +1,188 @@
+﻿/****************************************************
+* @File: 		style.css
+* @Action:		ITD lab. theme for GetSimple CMS
+* @Autor:       Antanariva, Yekaterinburg, Russia
+*****************************************************/
+
+/* Стиль шаблона ITD lab. для сайта inteldata.ru
+ * Изначально планировались колонки 198px+центр+280px
+ * Справа сделали отступ 100px, чтобы не прижиматься к правому краю. Читаем то слева.
+ * Затем прибавляли отступы (по 10 срава и слева в боковых, по 20 - в центральной)
+ * Соответственно, идут расчёты и изменение значений ширины колонок и отступов
+ * Чтобы левая колонка наползала на хедер весь container подтянут с наползанием на -106,
+ * за счет margin-top:-106px; а для средней и правой колонок сделан фикс margin-top:106px; 
+*/
+
+/* просто для удобства */
+* {margin: 0;}
+a {text-decoration: none;}
+
+/* ::СТРУКТУРА САЙТА:: */
+
+/* если не ввести этот хак, IE6 выкинет левый столбик за экран */
+* html #left {
+  left: 350px;  /* RC fullwidth */
+}
+/* если не ограничить сжатие body, то при уменьшении окна всё разлетится */
+body {
+  min-width: 888px;  /* 2x LC fullwidth + CC padding  + RC width */
+}
+#header {  
+  background:#fff;
+  height: 106px; /* высота Header */
+  margin-left:198px; /* сдвиг вправо для открытия leftcolumn */
+  border-bottom: 5px solid #333;
+}
+#container {
+  margin-top: -111px;    /* для наползания контейнера на Header + border 5px */
+  padding-left: 198px;   /* LC width */
+  padding-right: 340px;  /* RC fullwidth (300) + CC padding */
+  overflow: hidden; /* добавление этого скрывает растягивание ниже на X (20000px+10) */
+}
+#container .column {
+  float: left;
+  padding-bottom: 20030px;  /* X + padding-bottom */
+  margin-bottom: -20000px;  /* X */
+}
+
+#center {
+  width: 100%;
+  background:#fff;
+  padding: 10px 20px;    /* CC padding */
+  margin-top:132px;      /* отступ вниз на высоту Header + для submenu */
+}
+/* Если не делать relative, то у меня не работало */
+#left {
+  position: relative;
+  width: 178px;  /* планируемая LC width (200) - padding*/
+  padding: 0 10px;
+  background:#333;
+  margin-left:-100%; 
+  right:238px; /* LC fullwidth + CC padding */
+}
+#right {
+  width: 280px;  /* планируемая RC width (280) - padding */
+  padding: 0 10px; 
+  background:#fff;
+  margin-right:-320px ; /* RC fullwidth + CC padding */
+  margin-top:111px;     /* отступ вниз на высоту Header */
+}
+#footer {
+  clear: both;
+  background:#999;
+  position: relative;
+  margin-top: -25px;    /* подобрано эмпирически. 1)в чистом html не требуется; */
+  border-top: 5px solid #333;
+}
+
+#footer a {color: #333;}
+
+/* для браузеров вроде IE чтоб не торчали под футером колонки */
+* html body {
+  overflow: hidden;
+}
+* html #footer-wrapper {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10010px;
+  margin-bottom: -10000px;
+  background: #fff;         /* Same as body background */
+}  
+/* ::ЧАСТИ и ПОЗИЦИИ:: */
+
+/* Логотип */
+#logo {position:relative; height: 100%; padding: 0 27px;}
+ #undertitle {position:relative; top:18px; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color:#999; margin: 0 0 14px 0;}
+ #title  a {font-family: 'Exo', sans-serif; font-weight: 800; font-size:42px; color: #000; } 
+ #subtitle {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color: #999; margin: -8px 0 0 0;}
+
+/* 2 популярных ссылки в шапке справа от лого */
+#popular {position:absolute; max-width:700px; height: 90px; top:20px; left: 560px;}
+ #popular1 {position:absolute; width:344px; height: 50px;}
+ #imgpop {border: 1px #333333 solid; margin: -4px 4px 0 0px;}
+ #popular2{position:absolute; width:264px; height: 50px; margin: 0 0 0 344px;}
+	
+.cat {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:16px;}
+ a.cat {color: #c9201d;} 
+ a.cat:hover {color: #c9201d;} 
+ a.cat:visited {color: #c9201d;}
+
+/* рекламный h2 */
+h5 {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:20px; margin: 0 0 4px 0;}
+ a.h5{color:#000;}
+ 
+.desc {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:0; color: #333;}
+/* */
+
+/* Основная навигация */
+nav {margin: 0 0 0 22px}
+ol, li {list-style-type: none;}
+ol {padding: 7px 0 13px 0;}
+li {padding: 4px 0 3px 0;}
+/* #f63; */
+.cat-bar {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:18px;}
+ a.cat-bar{color:#C9201D;}
+ a.cat-bar:hover {color:#C9201D;} 
+ a.cat-bar:visited {color:#C9201D;}
+#subcat {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:15px;}
+ #subcat a{color: #fff; } 
+ #subcat a:hover {color: #ccc;} 
+ #subcat a:visited {color: #fff;}
+.prim {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:5px 0 3px 0; color: #39f;}
+
+/* Дублирующее меню справа вверху (расположено в RC) */
+#submenu {position: relative; height:16px; margin: -20px 0 0 -530px; padding: 0 0 10px 198px; 
+  text-align: right; font-family: 'Roboto', sans-serif; font-weight: 700; font-size:12px; min-width:595px;
+ }
+#submenu a {color: #333;}
+#submenu a:hover {color: #C9201D;}
+#submenu a:visited {color: #333;}
+
+/* Материалы статей */
+article {
+	float:left;
+	min-height:500px;
+	background:#fff;
+	border-bottom:1px solid #c8c8c8;
+	border-left:1px solid #e4e4e4;
+	border-right:1px solid #c8c8c8;
+	-moz-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	-webkit-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	padding: 30px 15px;
+	font-family: 'Roboto', sans-serif; font-weight: 400; font-size:14px; padding: 10px; color: #000;
+}
+
+/* RightColumn */
+aside {
+	float:right;
+	width:260px;
+	border-bottom:1px solid #c8c8c8;
+	border-left:1px solid #e4e4e4;
+	border-right:1px solid #c8c8c8;
+	-moz-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	-webkit-box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	box-shadow: 2px 1px 10px rgba(0,0,0, .07);
+	padding: 30px 15px;
+}
+
+article a {color: #38f;}
+
+h1 {font-family: 'Cuprum', sans-serif; font-weight: 700; font-size:40px; margin: 0 0 4px 0;}
+h2 {font-family: 'Cuprum', sans-serif; font-weight: 700; font-size:32px; margin: 0 0 4px 0;}
+h3 {font-family: 'Cuprum', sans-serif; font-weight: 700; font-size:24px; margin: 0 0 4px 0;}
+h4 {font-family: 'Cuprum', sans-serif; font-weight: 700; font-size:19px; margin: 0 0 4px 0;}
+h5 {font-family: 'Cuprum', sans-serif; font-weight: 700; font-size:19px; margin: 0 0 4px 0;}
+
+p {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:14px; padding: 10px; color: #000;}
+
+blockquote {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin: 10px 0 10px 25px; padding: 5px; color: #003; border-left: 1px dotted #333;}
+
+aside ul {margin: 10px 0 10px 5px; padding: 5px;}
+aside li {margin: 10px 0 10px 25px; padding: 5px;}
+
+/* Поиск */
+#search {position:relative; width: 220px; height:40px; float: right; margin-top: -90px;}
+
+.r {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; text-align: right; padding: 4px 0 0 27px; margin-right: 45px; color: #fff;}
