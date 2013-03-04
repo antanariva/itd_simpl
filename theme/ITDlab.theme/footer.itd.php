@@ -14,7 +14,7 @@
 
 	 	<div class="wrapper">
 			<div class="left"><?php echo date('Y'); ?> <a href="<?php get_site_url(); ?>" ><?php get_site_name(); ?></a></div>
-			<div class="right">Разработано для сайта <a href="http://www.inteldata.ru" >ITD lab.</a> &middot; <?php get_site_credits(); ?></div>
+			<div class="right">Разработано для сайта <a href="http://www.inteldata.ru" >ITD lab.</a></div>
 		</div>
 		</footer>
 	</div>

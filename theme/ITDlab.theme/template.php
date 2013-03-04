@@ -11,8 +11,8 @@ Innovation_Settings();
 include('header.itd.php'); 
 ?>
 	
-	<div id="container">
-		<div id="center" class="column">
+<div id="container">
+	<div id="center" class="column">
 			<!-- page content -->
 			<article>
 				<section>				
@@ -28,11 +28,11 @@ include('header.itd.php');
 			</article>
 		</div>
 		
-		<div id="left" class="column"><p>левая колонка</p></div>
+	<div id="left" class="column"><?php include('leftcolumn.itd.php'); ?></div>
 	    
-		<div id="right" class="column"><p>правая колонка</p></div>  
+	<div id="right" class="column"><?php include('rightcolumn.itd.php'); ?></div>  
 				
-	</div>
+</div>
 
 	
 <!-- include the footer template -->

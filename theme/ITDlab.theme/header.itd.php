@@ -20,7 +20,9 @@
     <link rel="author" href="humans.txt" />
     <meta name="robots" content="index, follow">
 
-	<link href='//fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cuprum:400&subset=cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
 	<link href="<?php get_theme_url(); ?>/css/reset.css" rel="stylesheet">
 	<link href="<?php get_theme_url(); ?>/css/style.css" rel="stylesheet">
 	
@@ -39,16 +41,31 @@
 	
 <!-- site header -->
 	<div id="header">
-		<header>
-					
-			<!-- logo/sitename -->
-			<a href="<?php get_site_url(); ?>" id="logo" ><?php get_site_name(); ?></a>
-			
-			<!-- main navigation -->
-			<nav id="main-nav">
-				<ul>
-					<?php get_navigation(get_page_slug(FALSE)); ?>
-				</ul>
-			</nav>
-		</header>
+	<header>
+		<div id="logo">
+			<div id="undertitle">Блог специалистов: Просто о сложном</div>
+			<div id="title"><a href="<?php get_site_url(); ?>" title="Блог разработчиков сайтов, ракетной техники и врачей иммунологов" alt="Блог разработчиков ITD lab."><?php get_site_name(); ?></a>
+			<div id="subtitle">Интеллектуальное общение. Анализ. Критика</div>
+			</div>
+		</div>
+
+		<div id="search">
+		<!-- Поиск по сайту -->
+		</div>
+		
+		<div id="popular"><!-- Рекламируемые заголовки вверху -->
+			<div id="popular1">
+				<img src="<?php get_theme_url(); ?>/img/itd.png" alt="ITD lab." align="left" id="imgpop">
+				<div><a href="itd.html" title="Услуги ITD lab." alt="ITD lab." class="cat">IT-сервис</a></div>
+				<h2><a href="itd/sitebuilding.html" title="Заказать разработку сайта" alt="Создание сайтов" class="h2">Создание сайтов</a></h2>
+				<div class="desc">Услуги создания и поддержки сайтов, разработка презентаций...</div>
+			</div>
+		
+			<div id="popular2">
+				<div><a href="med.html" title="Статьи медицинской тематики" alt="Вопросы медицины" class="cat">Вопросы медицины</a></div>
+				<h2><a href="med/vakc.html" title="Вакцинация: взгяд врачей и пациентов" alt="Вакцинация: за и против" class="h2">Вакцинация: за и против</a></h2>
+				<div class="desc">Польза и вред прививок, взгляд иммунолога, юридические аспекты</div>
+			</div>
+		</div>
+	</header>
 	</div>	

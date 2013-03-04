@@ -5,14 +5,19 @@
 *****************************************************/
 
 /* Стиль шаблона ITD lab. для сайта inteldata.ru
- * Изначально планировались колонки 200px+центр+280px
+ * Изначально планировались колонки 198px+центр+280px
  * Справа сделали отступ 100px, чтобы не прижиматься к правому краю. Читаем то слева.
  * Затем прибавляли отступы (по 10 срава и слева в боковых, по 20 - в центральной)
  * Соответственно, идут расчёты и изменение значений ширины колонок и отступов
+ * Чтобы левая колонка наползала на хедер весь container подтянут с наползанием на -106,
+ * за счет margin-top:-106px; а для средней и правой колонок сделан фикс margin-top:106px; 
 */
 
 /* просто для удобства */
 * {margin: 0;}
+a {text-decoration: none;}
+
+/* ::СТРУКТУРА САЙТА:: */
 
 /* если не ввести этот хак, IE6 выкинет левый столбик за экран */
 * html #left {
@@ -20,19 +25,23 @@
 }
 /* если не ограничить сжатие body, то при уменьшении окна всё разлетится */
 body {
-  min-width: 890px;  /* 2x LC fullwidth + CC padding  + RC width + 100px */
+  min-width: 888px;  /* 2x LC fullwidth + CC padding  + RC width */
 }
 #header {  
   background:#ccc;
+  height: 106px; /* высота Header */
+  margin-left:198px; /* сдвиг вправо для открытия leftcolumn */
+  border-bottom: 5px solid #333;
 }
 #container {
-  padding-left: 200px;   /* LC width */
-  padding-right: 490px;  /* RC fullwidth (300) + CC padding */
+  margin-top: -111px;    /* для наползания контейнера на Header + border 5px */
+  padding-left: 198px;   /* LC width */
+  padding-right: 340px;  /* RC fullwidth (300) + CC padding */
   overflow: hidden; /* добавление этого скрывает растягивание ниже на X (20000px+10) */
 }
 #container .column {
   float: left;
-  padding-bottom: 20010px;  /* X + padding-bottom */
+  padding-bottom: 20030px;  /* X + padding-bottom */
   margin-bottom: -20000px;  /* X */
 }
 
@@ -40,31 +49,33 @@ body {
   width: 100%;
   background:#cf0;
   padding: 10px 20px;    /* CC padding */
+  margin-top:137px;      /* отступ вниз на высоту Header + для submenu */
 }
 /* Если не делать relative, то у меня не работало */
 #left {
   position: relative;
-  width: 180px;  /* планируемая LC width (200) - padding*/
+  width: 178px;  /* планируемая LC width (200) - padding*/
   padding: 0 10px;
   background:#39f;
   margin-left:-100%; 
-  right:240px; /* LC fullwidth + CC padding */
+  right:238px; /* LC fullwidth + CC padding */
 
 }
 #right {
-  width: 300px;  /* планируемая RC width (280) - padding */
+  width: 280px;  /* планируемая RC width (280) - padding */
   padding: 0 10px; 
   background:red;
-  margin-right:-390px ; /* RC fullwidth + CC padding + 50px*/
-
+  margin-right:-320px ; /* RC fullwidth + CC padding */
+  margin-top:111px; /* отступ вниз на высоту Header */
 }
 #footer {
   clear: both;
   background:#ccc;
   position: relative;
+  margin-top: -25px; /* подобрано эмпирически. в чистом html не требуется */
 }
 
-/* не понял, зачем надо это: */
+/* для браузеров вроде IE чтоб не торчали под футером колонки */
 * html body {
   overflow: hidden;
 }
@@ -75,3 +86,53 @@ body {
   padding-bottom: 10010px;
   margin-bottom: -10000px;
   background: #fff;         /* Same as body background */
+}  
+/* ::ЧАСТИ и ПОЗИЦИИ:: */
+
+/* Логотип */
+#logo {position:relative; height: 100%; padding: 0 27px;}
+#undertitle {position:relative; top:18px; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color:#999; margin: 0 0 14px 0;}
+#title  a {font-family: 'Exo', sans-serif; font-weight: 800; font-size:42px; color: #000; } 
+#subtitle {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:13px; color: #999; margin: -8px 0 0 0;}
+
+/* 2 популярных ссылки в шапке справа от лого */
+#popular {position:absolute; max-width:700px; height: 90px; top:20px; left: 560px;}
+    #popular1 {position:absolute; width:344px; height: 50px;}
+    #imgpop {border: 1px #333333 solid; margin: -4px 4px 0 0px;}
+	#popular2{position:absolute; width:264px; height: 50px; margin: 0 0 0 344px;}
+	
+.cat {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:16px;}
+ a.cat {color: #c9201d;} 
+ a.cat:hover {color: #c9201d;} 
+ a.cat:visited {color: #c9201d;}
+ 
+h2 {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:20px; margin: 0 0 4px 0;}
+ a.h2{color:#000;}
+ 
+.desc {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:0; color: #333;}
+/* */
+
+/* Основная навигация */
+nav {margin: 22px 0 0 22px}
+ol, li {list-style-type: none;}
+ol {padding: 7px 0 13px 0;}
+li {padding: 4px 0 3px 0;}
+
+.cat-bar {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:18px;}
+ a.cat-bar{color:#f63;} 
+ a.cat-bar:hover {color:#f63;} 
+ a.cat-bar:visited {color:#f63;}
+#subcat {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:15px;}
+ #subcat a{color: #fff; } 
+ #subcat a:hover {color: #ccc;} 
+ #subcat a:visited {color: #fff;}
+.prim {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:5px 0 3px 0; color: #39f;}
+
+/* Дублирующее меню справа вверху (расположено в RC) */
+#submenu {position: relative; height:16px; margin: -20px 0 0 -530px; padding: 0 0 10px 198px; 
+  text-align: right; font-family: 'Roboto', sans-serif; font-weight: 700; font-size:12px; min-width:595px;
+ }
+#submenu a {color: #333;}
+#submenu a:hover {color: #C9201D;}
+#submenu a:visited {color: #333;}
+
