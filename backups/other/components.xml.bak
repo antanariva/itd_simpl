@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<channel><item><title><![CDATA[Sidebar]]></title><slug>sidebar</slug><value><![CDATA[&lt;h2&gt;GetSimple Features&lt;/h2&gt;
-&lt;ul&gt; 
-&lt;li&gt;XML based data storage&lt;/li&gt; 
-&lt;li&gt;Best-in-Class User Interface&lt;/li&gt; 
-&lt;li&gt;\&#039;Undo\&#039; protection &amp;amp; backups&lt;/li&gt; 
-&lt;li&gt;Easy to theme&lt;/li&gt; 
-&lt;li&gt;Great documentation&lt;/li&gt; 
-&lt;li&gt;Growing community&lt;/li&gt; 
-&lt;/ul&gt;
-&lt;p&gt;This is your sidebar text. Please change me in &lt;em&gt;Theme -&gt; Edit Components&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=\&quot;http://get-simple.info/download/\&quot;&gt;Download the Latest GetSimple&lt;/a&gt;&lt;/p&gt;]]></value></item><item><title><![CDATA[Tagline]]></title><slug>tagline</slug><value><![CDATA[Just Another GetSimple Website]]></value></item></channel>
+<channel><item><title><![CDATA[popular]]></title><slug>popular</slug><value><![CDATA[&lt;div id=&quot;popular1&quot;&gt;
+				&lt;img src=&quot;&lt;?php get_theme_url(); ?&gt;/img/itd.png&quot; alt=&quot;ITD lab.&quot; align=&quot;left&quot; id=&quot;imgpop&quot;&gt;
+				&lt;div&gt;&lt;a href=&quot;itd.html&quot; title=&quot;Услуги ITD lab.&quot; alt=&quot;ITD lab.&quot; class=&quot;cat&quot;&gt;IT-сервис&lt;/a&gt;&lt;/div&gt;
+				&lt;h5&gt;&lt;a href=&quot;itd/sitebuilding.html&quot; title=&quot;Заказать разработку сайта&quot; alt=&quot;Создание сайтов&quot; class=&quot;h5&quot;&gt;Создание сайтов&lt;/a&gt;&lt;/h5&gt;
+				&lt;div class=&quot;desc&quot;&gt;Cоздание и поддержка сайтов, презентации и буклеты...&lt;/div&gt;
+			&lt;/div&gt;
+		
+			&lt;div id=&quot;popular2&quot;&gt;
+				&lt;div&gt;&lt;a href=&quot;med.html&quot; title=&quot;Статьи медицинской тематики&quot; alt=&quot;Вопросы медицины&quot; class=&quot;cat&quot;&gt;Вопросы медицины&lt;/a&gt;&lt;/div&gt;
+				&lt;h5&gt;&lt;a href=&quot;med/vakc.html&quot; title=&quot;Вакцинация: взгяд врачей и пациентов&quot; alt=&quot;Вакцинация: за и против&quot; class=&quot;h5&quot;&gt;Вакцинация: за и против&lt;/a&gt;&lt;/h5&gt;
+				&lt;div class=&quot;desc&quot;&gt;Польза и вред прививок, взгляд иммунолога, юридические аспекты&lt;/div&gt;
+			&lt;/div&gt;]]></value></item><item><title><![CDATA[Tagline]]></title><slug>tagline</slug><value><![CDATA[]]></value></item></channel>

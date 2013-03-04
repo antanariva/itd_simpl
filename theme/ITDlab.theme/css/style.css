@@ -44,7 +44,6 @@ body {
   padding-bottom: 20030px;  /* X + padding-bottom */
   margin-bottom: -20000px;  /* X */
 }
-
 #center {
   width: 100%;
   background:#fff;
@@ -114,19 +113,17 @@ h5 {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:20px; margin:
 .desc {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:0; color: #333;}
 
 /* Основная навигация */
-nav {margin: 0 0 0 22px}
-nav ol {list-style-type: none; padding: 7px 0 13px 0;}
-nav ul {list-style-type: none; padding: 7px 0 13px 0;}
-nav li {list-style-type: none; padding:4px 0 3px 0;}
+nav {margin-left: 8px}
+nav li {list-style-type: none; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:17px;
+margin: 0; padding: 4px 0;}
+nav ul li {list-style-type: none; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:14px;
+margin-left: -40px;}
 
-.cat-bar {margin:4px 0 0 0; font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:18px;}
- a.cat-bar{color:#C9201D;}
- a.cat-bar:hover {color:#C9201D;} 
- a.cat-bar:visited {color:#C9201D;}
-#subcat {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:15px;}
- #subcat a{color: #fff; } 
- #subcat a:hover {color: #ccc;} 
- #subcat a:visited {color: #fff;}
+nav li a {color:#C9201D;}
+nav li a:hover, nav li a:visited {color:#C9201D;} 
+nav ul li a{color: #fff; } 
+nav ul li a:hover {color: #ccc;} 
+nav ul li a:visited {color: #fff;}
 .prim {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:5px 0 3px 0; color: #39f;}
 
 /* Дублирующее меню справа вверху (расположено в RC) */

@@ -51,22 +51,11 @@
 
 		<div id="search">
 		<!-- Поиск по сайту -->
-		<?php get_i18n_search_form(array('slug'=>'search', 'showTags'=>0)); ?>
+			<?php get_i18n_search_form(array('slug'=>'search', 'showTags'=>0)); ?>
 		</div>
 		
 		<div id="popular"><!-- Рекламируемые заголовки вверху -->
-			<div id="popular1">
-				<img src="<?php get_theme_url(); ?>/img/itd.png" alt="ITD lab." align="left" id="imgpop">
-				<div><a href="itd.html" title="Услуги ITD lab." alt="ITD lab." class="cat">IT-сервис</a></div>
-				<h5><a href="itd/sitebuilding.html" title="Заказать разработку сайта" alt="Создание сайтов" class="h5">Создание сайтов</a></h5>
-				<div class="desc">Cоздание и поддержка сайтов, презентации и буклеты...</div>
-			</div>
-		
-			<div id="popular2">
-				<div><a href="med.html" title="Статьи медицинской тематики" alt="Вопросы медицины" class="cat">Вопросы медицины</a></div>
-				<h5><a href="med/vakc.html" title="Вакцинация: взгяд врачей и пациентов" alt="Вакцинация: за и против" class="h5">Вакцинация: за и против</a></h5>
-				<div class="desc">Польза и вред прививок, взгляд иммунолога, юридические аспекты</div>
-			</div>
+	        <?php get_component('popular'); ?>
 		</div>
 	</header>
 	</div>	
