@@ -1,10 +1,8 @@
 ﻿<?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
 /****************************************************
-*
-* @File: 			sidebar.inc.php
-* @Package:		GetSimple
-* @Action:		Innovation theme for GetSimple CMS
-*
+* @File: 		leftcolumn.itd.php
+* @Action:		ITD lab. theme for GetSimple CMS
+* @Autor:       Antanariva, Yekaterinburg, Russia
 *****************************************************/
 ?><aside id="sidebar">
 

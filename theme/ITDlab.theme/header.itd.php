@@ -1,13 +1,16 @@
 ﻿<?php if(!defined('IN_GS')){ die('you cannot load this page directly.'); }
 /****************************************************
-*
-* @File: 			header.inc.php
-* @Package:		GetSimple
-* @Action:		Innovation theme for GetSimple CMS
-*
+* @File: 		header.itd.php
+* @Action:		ITD lab. theme for GetSimple CMS
+* @Autor:       Antanariva, Yekaterinburg, Russia
 *****************************************************/
 ?>
 <!DOCTYPE html>
+	<!--[if lt IE 7 ]> <html lang="ru" class="ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <html lang="ru" class="ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <html lang="ru" class="ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <html lang="ru" class="ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru" > <!--<![endif]-->
 <html lang="<?php echo get_site_lang(true); ?>">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
@@ -25,11 +28,10 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]--> 
 	
-	<!--[if lt IE 7 ]>
-    <script src="<?php get_theme_url(); ?>/js/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
-    <![endif]-->
-
+	<!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+	
 	<?php get_header(); ?>
 </head> 
 

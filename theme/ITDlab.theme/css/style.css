@@ -1,20 +1,33 @@
-﻿/* просто для удобства */
+﻿/****************************************************
+* @File: 		style.css
+* @Action:		ITD lab. theme for GetSimple CMS
+* @Autor:       Antanariva, Yekaterinburg, Russia
+*****************************************************/
+
+/* Стиль шаблона ITD lab. для сайта inteldata.ru
+ * Изначально планировались колонки 200px+центр+280px
+ * Справа сделали отступ 100px, чтобы не прижиматься к правому краю. Читаем то слева.
+ * Затем прибавляли отступы (по 10 срава и слева в боковых, по 20 - в центральной)
+ * Соответственно, идут расчёты и изменение значений ширины колонок и отступов
+*/
+
+/* просто для удобства */
 * {margin: 0;}
 
 /* если не ввести этот хак, IE6 выкинет левый столбик за экран */
 * html #left {
-  left: 150px;  /* RC fullwidth */
+  left: 350px;  /* RC fullwidth */
 }
 /* если не ограничить сжатие body, то при уменьшении окна всё разлетится */
 body {
-  min-width: 630px;  /* 2x LC fullwidth ((200+10)x2+) + CC padding  + RC width */
+  min-width: 890px;  /* 2x LC fullwidth + CC padding  + RC width + 100px */
 }
 #header {  
   background:#ccc;
 }
 #container {
   padding-left: 200px;   /* LC width */
-  padding-right: 190px;  /* RC fullwidth (150) + CC padding */
+  padding-right: 490px;  /* RC fullwidth (300) + CC padding */
   overflow: hidden; /* добавление этого скрывает растягивание ниже на X (20000px+10) */
 }
 #container .column {
@@ -39,10 +52,10 @@ body {
 
 }
 #right {
-  width: 130px;  /* планируемая RC width (150) - padding */
+  width: 300px;  /* планируемая RC width (280) - padding */
   padding: 0 10px; 
   background:red;
-  margin-right:-190px ; /* RC fullwidth + CC padding */
+  margin-right:-390px ; /* RC fullwidth + CC padding + 50px*/
 
 }
 #footer {
@@ -50,3 +63,15 @@ body {
   background:#ccc;
   position: relative;
 }
+
+/* не понял, зачем надо это: */
+* html body {
+  overflow: hidden;
+}
+* html #footer-wrapper {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10010px;
+  margin-bottom: -10000px;
+  background: #fff;         /* Same as body background */
