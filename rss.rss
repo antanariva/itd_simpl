@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"  xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Новости от inteldata.ru</title>
+<link>http://localhost/itd/rss.rss</link>
+<description>Публикации на сайте разработчиков ITD lab.</description>
+<lastBuildDate>Sat, 2 Mar 2013 17:30:18 YEKT</lastBuildDate>
+<language>en-US</language>
+<atom:link href="http://localhost/itd/rss.rss" rel="self" type="application/rss+xml" />
+<item>
+	  <title>Тема 2.1</title>
+	  <link>http://localhost/itd/index.php?post=-21</link>
+	  <guid>http://localhost/itd/index.php?post=-21</guid>
+	  <description>&amp;lt;p&amp;gt;
+	длыовплдфржпфкрофужкшщ&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;
+	улпрфджукрпфудкпуфклпрдлурпдрфдпрлдфрукпрфкрп&amp;lt;/</description>
+	  <category>Компьютерная помощь</category>
+</item>
+<item>
+	  <title>3 тема</title>
+	  <link>http://localhost/itd/index.php?post=3team</link>
+	  <guid>http://localhost/itd/index.php?post=3team</guid>
+	  <description>&amp;lt;p&amp;gt;
+	Поскитавшись по просторам пространства игрового мира Guild Wars 2, то бишь по Тирии, испытав себя в немн�</description>
+</item>
+<item>
+	  <title>2 тема</title>
+	  <link>http://localhost/itd/index.php?post=2team</link>
+	  <guid>http://localhost/itd/index.php?post=2team</guid>
+	  <description>&amp;lt;p&amp;gt;
+	Поскитавшись по просторам пространства игрового мира Guild Wars 2, то бишь по Тирии, испытав себя в немн�</description>
+	  <category>Вопросы медицины</category>
+</item>
+<item>
+	  <title>1 тема</title>
+	  <link>http://localhost/itd/index.php?post=1team</link>
+	  <guid>http://localhost/itd/index.php?post=1team</guid>
+	  <description>&amp;lt;p&amp;gt;
+	Поскитавшись по просторам пространства игрового мира Guild Wars 2, то бишь по Тирии, испытав себя в немн�</description>
+	  <category>Вопросы медицины</category>
+</item>
+</channel>
+</rss>
