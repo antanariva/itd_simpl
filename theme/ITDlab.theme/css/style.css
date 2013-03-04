@@ -1,0 +1,52 @@
+﻿/* просто для удобства */
+* {margin: 0;}
+
+/* если не ввести этот хак, IE6 выкинет левый столбик за экран */
+* html #left {
+  left: 150px;  /* RC fullwidth */
+}
+/* если не ограничить сжатие body, то при уменьшении окна всё разлетится */
+body {
+  min-width: 630px;  /* 2x LC fullwidth ((200+10)x2+) + CC padding  + RC width */
+}
+#header {  
+  background:#ccc;
+}
+#container {
+  padding-left: 200px;   /* LC width */
+  padding-right: 190px;  /* RC fullwidth (150) + CC padding */
+  overflow: hidden; /* добавление этого скрывает растягивание ниже на X (20000px+10) */
+}
+#container .column {
+  float: left;
+  padding-bottom: 20010px;  /* X + padding-bottom */
+  margin-bottom: -20000px;  /* X */
+}
+
+#center {
+  width: 100%;
+  background:#cf0;
+  padding: 10px 20px;    /* CC padding */
+}
+/* Если не делать relative, то у меня не работало */
+#left {
+  position: relative;
+  width: 180px;  /* планируемая LC width (200) - padding*/
+  padding: 0 10px;
+  background:#39f;
+  margin-left:-100%; 
+  right:240px; /* LC fullwidth + CC padding */
+
+}
+#right {
+  width: 130px;  /* планируемая RC width (150) - padding */
+  padding: 0 10px; 
+  background:red;
+  margin-right:-190px ; /* RC fullwidth + CC padding */
+
+}
+#footer {
+  clear: both;
+  background:#ccc;
+  position: relative;
+}
