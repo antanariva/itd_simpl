@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Mon, 04 Mar 2013 12:41:48 +0000</pubDate><title><![CDATA[search]]></title><url><![CDATA[search]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[search]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;
-	(% searchform %)&lt;br /&gt;
-	(% searchresults %)&lt;/p&gt;
-]]></content><private><![CDATA[]]></private><author><![CDATA[antanariva]]></author></item>
+<item><pubDate>Mon, 04 Mar 2013 12:41:48 +0000</pubDate><title>search</title><url>search</url><meta/><metad/><template>template.php</template><content>&amp;lt;p&amp;gt;
+	(% searchform %)&amp;lt;br /&amp;gt;
+	(% searchresults %)&amp;lt;/p&amp;gt;
+</content><author>antanariva</author><parent/><menu/><menuStatus/><private/><menuOrder><![CDATA[6]]></menuOrder></item>

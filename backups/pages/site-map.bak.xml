@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Mon, 04 Mar 2013 21:41:27 +0000</pubDate><title><![CDATA[Карта сайта]]></title><url><![CDATA[site-map]]></url><meta><![CDATA[map, site]]></meta><metad><![CDATA[map of the INTELDATA.ru site]]></metad><menu><![CDATA[Карта сайта]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;
+	&lt;!--?php get_component(&#039;tagline&#039;); ?--&gt;&lt;code&gt;&amp;lt;?php get_component(&lt;span class=&quot;compslugcode&quot;&gt;&#039;tagline&#039;&lt;/span&gt;); ?&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+	&lt;textarea id=&quot;cke_pastebin&quot; style=&quot;position: absolute; top: 8px; width: 1px; height: 1px; overflow: hidden; left: -1000px;&quot;&gt;&lt;/textarea&gt;&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[antanariva]]></author><creDate>Mon, 04 Mar 2013 21:40:46 +0000</creDate><user><![CDATA[antanariva]]></user></item>
