@@ -10,8 +10,8 @@
 	<!--[if IE 7 ]>    <html lang="ru" class="ie7"> <![endif]-->
 	<!--[if IE 8 ]>    <html lang="ru" class="ie8"> <![endif]-->
 	<!--[if IE 9 ]>    <html lang="ru" class="ie9"> <![endif]-->
-	<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru" > <!--<![endif]-->
-<html lang="<?php echo get_site_lang(true); ?>">
+	<!--[if (gt IE 9)|!(IE)]><!--><html lang="<?php echo get_site_lang(true); ?>"> <!--<![endif]-->
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
     <title><?php get_page_clean_title(); ?> - <?php get_site_name(); ?></title>
@@ -23,8 +23,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cuprum:400&subset=cyrillic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
-	<link href="<?php get_theme_url(); ?>/css/reset.css" rel="stylesheet">
 	<link href="<?php get_theme_url(); ?>/css/style.css" rel="stylesheet">
+	<!--[if lt IE 7 ]> 	<link href="<?php get_theme_url(); ?>/css/styleIE6.css" rel="stylesheet"> <![endif]-->
+	<!--[if IE 7 ]> 	<link href="<?php get_theme_url(); ?>/css/styleIE7.css" rel="stylesheet"> <![endif]-->
+	<!--[if IE 8 ]> 	<link href="<?php get_theme_url(); ?>/css/styleIE8.css" rel="stylesheet"> <![endif]-->
+	<!--[if IE 9 ]> 	<link href="<?php get_theme_url(); ?>/css/styleIE9.css" rel="stylesheet"> <![endif]-->
 	
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -25,8 +25,8 @@ include('header.itd.php');
 				</section>			
 			</article>
 			<div class="breadcrumbs">
-				<a href="<?php echo find_url('index',null); ?>">Главная</a>
-				<?php get_i18n_breadcrumbs(return_page_slug()); ?>
+				<a href="<?php echo find_url('/',null); ?>">INTELDATA.RU</a>
+				<b><?php get_i18n_breadcrumbs(return_page_slug()); ?></b>
 			</div>
 		</div>
 		

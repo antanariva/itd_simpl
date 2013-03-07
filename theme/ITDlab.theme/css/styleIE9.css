@@ -19,14 +19,9 @@ a {text-decoration: none;}
 
 /* ::СТРУКТУРА САЙТА:: */
 
-/* если не ввести этот хак, IE6 выкинет левый столбик за экран */
-* html #left {
-  left: 350px;
-} 
-
 /* если не ограничить сжатие body, то при уменьшении окна всё разлетится */
 body {
-  min-width: 888px;  /* 2x LC fullwidth + CC padding  + RC width */
+  min-width: 888px; margin: 0; /* 2x LC fullwidth + CC padding  + RC width */
 }
 #header {  
   background:#fff;
@@ -57,7 +52,7 @@ body {
   width: 178px;  /* планируемая LC width (200) - padding*/
   padding: 0 10px;
   background:#333;
-  margin-left:-100%; 
+  margin-left:-200%; 
   right:238px; /* LC fullwidth + CC padding */
 }
 #right {
