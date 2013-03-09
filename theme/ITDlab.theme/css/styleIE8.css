@@ -1,10 +1,10 @@
 ﻿/****************************************************
-* @File: 		style.css
+* @File: 		styleIE8.css
 * @Action:		ITD lab. theme for GetSimple CMS
 * @Autor:       Antanariva, Yekaterinburg, Russia
 *****************************************************/
 
-/* Стиль шаблона ITD lab. для сайта inteldata.ru
+/* Стиль шаблона ITD lab. для сайта inteldata.ru (только для IE8)
  * Изначально планировались колонки 198px+центр+280px
  * Справа сделали отступ 100px, чтобы не прижиматься к правому краю. Читаем то слева.
  * Затем прибавляли отступы (по 10 срава и слева в боковых, по 20 - в центральной)
@@ -17,12 +17,6 @@
 a {text-decoration: none;}
 a:hover, a:active { outline: none; }
 
-/* ::СТРУКТУРА САЙТА:: */
-
-/* если не ввести этот хак, IE6 выкинет левый столбик за экран */
-* html #left {
-  left: 350px;  /* RC fullwidth */
-}
 /* если не ограничить сжатие body, то при уменьшении окна всё разлетится */
 body {
   min-width: 888px;  /* 2x LC fullwidth + CC padding  + RC width */
@@ -61,9 +55,10 @@ body {
   right:238px; /* LC fullwidth + CC padding */
 }
 #right {
+  position: relative;
   width: 280px;  /* планируемая RC width (280) - padding */
   padding: 0 10px; 
-  background:#fff;
+  background:#red;
   margin-right:-320px ; /* RC fullwidth + CC padding */
   margin-top:111px;     /* отступ вниз на высоту Header */
 }
@@ -114,8 +109,8 @@ h5 {font-family: 'Roboto', sans-serif; font-weight: 700; font-size:20px; margin:
 .desc {font-family: 'Roboto', sans-serif; font-weight: 400; font-size:12px; margin:0; color: #333;}
 
 /* Основная навигация */
-nav {margin-left: 8px}
-nav li {font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:17px; margin: 0; padding: 4px 0; list-style:none; list-style-image: none; }
+nav {margin-left: 0px}
+nav li {font-family: 'Cuprum', sans-serif; font-weight: 400; font-size:17px; margin: 0 0 0 -7px; padding: 4px 0; list-style:none; list-style-image: none; }
 nav ul li {list-style-type: none; font-family: 'Roboto', sans-serif; font-weight: 400; font-size:14px;
 margin-left: 0px;}
 
@@ -172,7 +167,7 @@ article a:hover, aside a:hover {color:#096;}
 
 h1,h2,h3,h4,h5,h6 {font-family: 'Cuprum', sans-serif; font-weight: 700;  margin: 0 0 4px 0;}
 
-h1 {font-size:40px;}
+h1 {font-size:40px; color: red;}
 h2 {font-size:32px;}
 h3 {font-size:24px;}
 h4 {font-size:19px;}

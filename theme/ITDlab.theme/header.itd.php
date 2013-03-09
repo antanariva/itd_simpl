@@ -6,18 +6,16 @@
 *****************************************************/
 ?>
 <!DOCTYPE html>
-	<!--[if lt IE 7 ]> <html lang="ru" class="ie6"> <![endif]-->
-	<!--[if IE 7 ]>    <html lang="ru" class="ie7"> <![endif]-->
-	<!--[if IE 8 ]>    <html lang="ru" class="ie8"> <![endif]-->
-	<!--[if IE 9 ]>    <html lang="ru" class="ie9"> <![endif]-->
-	<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru" > <!--<![endif]-->
-<html lang="<?php echo get_site_lang(true); ?>">
+<!--[if lt IE 7 ]> <html lang="ru" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="ru" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="ru" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="ru" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru" > <!--<![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+<meta charset="utf-8">
+
     <title><?php get_page_clean_title(); ?> - <?php get_site_name(); ?></title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-    <meta name="generator" content="arms" />
-    <link rel="author" href="humans.txt" />
+
     <meta name="robots" content="index, follow">
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -25,15 +23,18 @@
 	<link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
 	<link href="<?php get_theme_url(); ?>/css/reset.css" rel="stylesheet">
 	<link href="<?php get_theme_url(); ?>/css/style.css" rel="stylesheet">
+	<!--[if IE 8 ]> <link href="<?php get_theme_url(); ?>/css/styleIE8.css" rel="stylesheet"> <![endif]-->
+
 	
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]--> 
 	
-	<!--[if lt IE 9]>
-	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-	<![endif]-->
-	
+	<!--[if lt IE 7 ]>
+    <script src="<?php get_theme_url(); ?>/assets/js/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+    <![endif]-->
+
 	<?php get_header(); ?>
 </head> 
 
@@ -48,14 +49,15 @@
 			<div id="subtitle">Интеллектуальное общение. Анализ. Критика</div>
 			</div>
 		</div>
-
+		
+		<div id="popular"><!-- Рекламируемые заголовки вверху -->
+	        <?php get_component('popular'); ?>
+		</div>
+		
 		<div id="search">
 		<!-- Поиск по сайту -->
 			<?php get_i18n_search_form(array('slug'=>'search', 'showTags'=>0)); ?>
 		</div>
 		
-		<div id="popular"><!-- Рекламируемые заголовки вверху -->
-	        <?php get_component('popular'); ?>
-		</div>
 	</header>
 	</div>	

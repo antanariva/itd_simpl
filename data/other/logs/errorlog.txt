@@ -25,3 +25,5 @@
 [04-Mar-2013 19:10:05 UTC] PHP Fatal error:  Call to undefined function get_i18n_search_form() in W:\home\localhost\www\itd\theme\ITDlab.theme\header.itd.php on line 54
 [04-Mar-2013 19:10:05 UTC] PHP Fatal error:  Call to undefined function get_i18n_search_form() in W:\home\localhost\www\itd\theme\ITDlab.theme\header.itd.php on line 54
 [04-Mar-2013 19:47:55 UTC] PHP Fatal error:  Call to undefined function Innovation_Settings() in W:\home\localhost\www\itd\theme\ITDlab.theme\template.php on line 9
+[09-Mar-2013 17:53:29 UTC] PHP Fatal error:  Call to undefined function get_breadcrumbs() in W:\home\localhost\www\itd\theme\ITDlab.theme\template.php on line 28
+[09-Mar-2013 17:54:57 UTC] PHP Fatal error:  Call to undefined function get_breadcrumbs() in W:\home\localhost\www\itd\theme\ITDlab.theme\template.php on line 28

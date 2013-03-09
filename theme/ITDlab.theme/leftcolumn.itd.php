@@ -6,7 +6,7 @@
 *****************************************************/
 ?>
 	<!-- Меню сайта -->
-	<nav>
-	<?php get_i18n_navigation('index',0,1,I18N_SHOW_MENU); ?>
+	<nav><ol>
+	<?php get_i18n_navigation('index',0,1,I18N_SHOW_MENU); ?></ol>
 	</nav>
 	
